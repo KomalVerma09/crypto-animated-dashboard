@@ -1,0 +1,185 @@
+.comparison-section {
+    position: relative;
+    padding: 8rem 0;
+    /* background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5), transparent); */
+  }
+  
+  .comparison-background {
+    position: absolute;
+    inset: 0;
+    background-image: url('https://images.unsplash.com/photo-1645726165192-e17c0139d7e3?q=80&w=2070');
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.05;
+  }
+  
+  .comparison-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    position: relative;
+  }
+  
+  .comparison-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .comparison-subtitle {
+    color: #9ca3af;
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .comparison-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  @media (min-width: 768px) {
+    .comparison-grid-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 1024px) {
+    .comparison-grid-2 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  
+  
+  .chain-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem;
+    padding: 2rem;
+    background-color: rgba(17, 24, 39, 0.5);
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease;
+    animation: fadeIn 0.5s ease forwards;
+    opacity: 0;
+  }
+  
+  .chain-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .chain-card.featured {
+    background: linear-gradient(135deg, rgba(157, 138, 87, 0.2), rgba(17, 24, 39, 0.5));
+  }
+  
+  .card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, transparent, rgba(0, 0, 0, 0.5));
+    z-index: 0;
+  }
+  
+  .card-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .chain-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .icon-container {
+    padding: 0.75rem;
+    background-color: rgba(17, 24, 39, 0.5);
+    border-radius: 0.75rem;
+    transition: transform 0.3s ease;
+    /* height: 70px;
+    width: 70px; */
+  }
+  .coinImg{
+    min-height: 50px;
+    min-width: 50px;
+  }
+  .chain-card:hover .icon-container {
+    transform: scale(1.1);
+  }
+  
+  .chain-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .chain-icon.bitcoin {
+    color: #F7931A;
+  }
+  
+  .chain-icon.ethereum {
+    color: #627EEA;
+  }
+  
+  .chain-icon.orion {
+    color: #9d8a57;
+  }
+  
+  .chain-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .chain-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease;
+  }
+  
+  .detail-row:hover {
+    background-color: rgba(17, 24, 39, 0.3);
+  }
+  
+  .detail-label {
+    color: #9d8a57;
+    text-transform: capitalize;
+  }
+  
+  .detail-value {
+    color: white;
+  }
+  
+  .check-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #34D399;
+  }
+  
+  .x-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #F87171;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

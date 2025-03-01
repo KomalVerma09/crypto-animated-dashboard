@@ -1,0 +1,339 @@
+.nav-container {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  
+  .desktop-links {
+    display: none;
+    flex: 1;
+    justify-content: center;
+    gap: 3rem;
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.2s;
+    font-size: 0.9rem;
+  }
+
+  .child-nav-link{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .nav-link:hover {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .menu-button {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  
+  .desktop-actions {
+    display: none;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+  }
+  
+  .icon-button {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    padding: 0.5rem;
+    position: relative;
+    transition: color 0.2s;
+  }
+  
+  .icon-button:hover {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .notification-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #9d8a57;
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.125rem 0.375rem;
+    border-radius: 1rem;
+    transform: translate(50%, -50%);
+  }
+  
+
+  .launch-button {
+    background: #9d8a57;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  .launch-button:hover {
+    background: rgba(157, 138, 87, 0.8);
+  }
+  .launch-button a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Desktop Dropdowns */
+  .desktop-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 1rem;
+    background: rgba(17, 24, 39, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    z-index: 1000;
+    min-width: 320px;
+    max-height: 480px;
+    overflow-y: auto;
+  }
+  .desktop-tab-dropdown {
+    position: absolute;
+    top: 80%;
+    /* right: 0; */
+    margin-top: 1rem;
+    background: rgb(7,7,16);
+    backdrop-filter: blur(10px);
+    /* border-radius: 1rem; */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    z-index: 1000;
+    min-width: 200px;
+    max-height: 480px;
+    overflow-y: auto;
+  }
+  
+  .notifications-dropdown {
+    padding: 1.5rem;
+  }
+  .tabs-dropdown {
+    padding: 10px;
+  }
+  
+  .dropdown-title {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .dropdown-tab-title {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  /* Mobile Menu */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(7, 7, 16, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .mobile-menu.open {
+    transform: translateX(0);
+  }
+  
+  .mobile-menu-content {
+    height: 100%;
+    padding: 2rem;
+    overflow-y: auto;
+  }
+  
+  .mobile-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .mobile-menu-close {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: color 0.2s;
+  }
+  
+  .mobile-menu-close:hover {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .mobile-menu-section {
+    margin-bottom: 2rem;
+  }
+  
+  .mobile-menu-item {
+    padding: 1rem 0;
+  }
+  
+  .mobile-menu-item-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    transition: color 0.2s;
+    font-size: 1rem;
+  }
+  
+  .mobile-menu-item-content:hover {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .section-title {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+  }
+  .tab-title {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+  }
+  
+  /* Notifications */
+  .notifications-section {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .notification-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.2s;
+    cursor: pointer;
+  }
+  
+  .notification-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .tab-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 5px;
+    padding-left: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.2s;
+    cursor: pointer;
+  }
+  
+  .tab-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .notification-icon {
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tab-icon {
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .notification-content {
+    flex: 1;
+  }
+  
+  .notification-title {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .notification-time {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+  }
+  .tab-content {
+    flex: 1;
+  }
+  
+  .tab-title {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .tab-time {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+  }
+  
+  
+  @media (min-width: 1024px) {
+    .desktop-links {
+      display: flex;
+    }
+  
+    .desktop-actions {
+      display: flex;
+    }
+  
+    .menu-button {
+      display: none;
+    }
+  }

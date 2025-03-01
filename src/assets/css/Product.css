@@ -1,0 +1,54 @@
+.ecosystem-box {
+  width: 100%;
+  /* max-width: 320px; */
+  height: 250px;
+  background: rgba(17, 24, 39, 0.5);
+  backdrop-filter: blur(8px);
+  border-radius: 2rem;
+  border: 2px solid rgba(157, 138, 87, 0.2);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ecosystem-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.ecosystem-card {
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ecosystem-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+}
+
+.ecosystem-icon {
+  width: 30px;
+  height: 30px;
+  color: #ffcc00;
+}
+
+.ecosystem-title-2 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.ecosystem-description {
+  font-size: 14px;
+  color: #cccccc;
+  line-height: 1.6;
+}

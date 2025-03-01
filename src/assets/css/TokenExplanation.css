@@ -1,0 +1,145 @@
+/* Container styles */
+.token-container {
+  /* max-width: 72rem; */
+  /* margin: 0 auto; */
+  width: 100%;
+  padding: 2rem;
+  border-radius: 30px;
+  border: 2px solid rgba(157, 138, 87, 0.2);
+  background-color: linear-gradient(135deg, rgba(17, 24, 39, 0.5), rgba(0, 0, 0, 0.5));
+  backdrop-filter: blur(8px);
+}
+
+.token-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.token-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #f3f4f6;
+}
+
+.token-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #9d8a57;
+}
+
+/* Tab Navigation */
+.tab-navigation {
+  display: flex;
+  gap: 0.25rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #374151;
+}
+
+.tab-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.tab-button:hover {
+  color: #9d8a57;
+}
+
+.tab-button.active {
+  color: #9d8a57;
+  border-bottom: 2px solid #9d8a57;
+}
+
+.tab-button:not(.active) {
+  color: #9ca3af;
+}
+
+/* Content Sections */
+.content-section-token-mechanism {
+  margin-top: 1.5rem;
+}
+
+.info-card {
+  background-color: rgba(17, 24, 39, 0.5) ;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 2px solid rgba(157, 138, 87, 0.2);
+  margin-bottom: 1.5rem;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fcd34d;
+}
+
+.card-subtitle {
+  color: #9d8a57;
+  margin-bottom: 1rem;
+}
+
+/* Lists */
+.ordered-list, .unordered-list {
+  list-style-position: inside;
+  color: #d1d5db;
+}
+
+.ordered-list {
+  list-style-type: decimal;
+}
+
+.unordered-list {
+  list-style-type: disc;
+}
+
+.list-item {
+  margin-bottom: 0.75rem;
+}
+
+/* Grid Layout */
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .comparison-grid {
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+}
+
+/* Text Colors */
+.text-emerald {
+  color: #fcd34d;
+  padding-bottom: 5px;
+}
+
+.text-purple {
+  color: #9d8a57;
+  padding-bottom: 5px;
+
+}
+
+.text-amber {
+  color: #fcd34d;
+  padding-bottom: 5px;
+
+}
+
+.text-gray {
+  color: #d1d5db;
+}
